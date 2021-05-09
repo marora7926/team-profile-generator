@@ -141,17 +141,15 @@ function initApp() {
             memberEmail.push(data.internEmail);
             otherData.push(data.school);
             console.log("Storing details of intern")
-            console.log(memberName)
-            console.log(idNumber)
-            console.log(memberEmail)
-            console.log(otherData)
             addOtherMembers();
         });
     };
     function generateHTML() {
+        console.log("Generating HTML page for team profile")
+        fs.writeFileAsync('./dist/index.html', htmlTemplate(teamRole), "utf-8");
+        console.log("Successfully generated index.html")
+    };
 
-    }
-    
     managerProfile();
 }
 
