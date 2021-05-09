@@ -22,7 +22,7 @@ function initApp() {
         inquirer.prompt ([
             {
                 type: 'input',
-                name: 'manageName',
+                name: 'managerName',
                 message: "What is the team manager's name?",
             },
             {
@@ -46,8 +46,8 @@ function initApp() {
             teamRole.push(manager);
             memberName.push(data.managerName);
             idNumber.push(data.managerId);
-            memberEmail.push = (data.managerEmail);
-            otherData.push = (data.officeNumber);
+            memberEmail.push(data.managerEmail);
+            otherData.push(data.officeNumber);
             console.log("Storing details of manager")
             addOtherMembers();
         });
@@ -103,8 +103,8 @@ function initApp() {
             teamRole.push(engineer);
             memberName.push(data.engineerName);
             idNumber.push(data.engineerId);
-            memberEmail.push = (data.engineerEmail);
-            otherData.push = (data.github);
+            memberEmail.push(data.engineerEmail);
+            otherData.push(data.github);
             console.log("Storing details of engineer")
             addOtherMembers();
         });
@@ -138,15 +138,18 @@ function initApp() {
             teamRole.push(intern);
             memberName.push(data.internName);
             idNumber.push(data.internId);
-            memberEmail.push = (data.internEmail);
-            otherData.push = (data.school);
+            memberEmail.push(data.internEmail);
+            otherData.push(data.school);
             console.log("Storing details of intern")
+            console.log(memberName)
+            console.log(idNumber)
+            console.log(memberEmail)
+            console.log(otherData)
             addOtherMembers();
         });
     };
-
     function generateHTML() {
-        
+
     }
     
     managerProfile();
