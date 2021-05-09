@@ -65,7 +65,7 @@ const createTeamProfile = myTeam => {
                             <div class="card-body">
                                 <ul class="list-group text-dark">
                                     <li class="list-group-item">ID:</li>
-                                    <li class="list-group-item">Email:</li>
+                                    <li class="list-group-item">mailto:Email:</li>
                                     <li class="list-group-item">Office number:</li>
                                 </ul>
                             </div>
@@ -83,7 +83,7 @@ const createTeamProfile = myTeam => {
                             <div class="card-body">
                                 <ul class="list-group text-dark">
                                     <li class="list-group-item">ID:</li>
-                                    <li class="list-group-item">Email:</li>
+                                    <li class="list-group-item">mailto:Email:</li>
                                     <li class="list-group-item">GitHub:</li>
                                 </ul>
                             </div>
@@ -101,7 +101,7 @@ const createTeamProfile = myTeam => {
                             <div class="card-body">
                                 <ul class="list-group text-dark">
                                     <li class="list-group-item">ID:</li>
-                                    <li class="list-group-item">Email:</li>
+                                    <li class="list-group-item">mailto:Email:</li>
                                     <li class="list-group-item">School:</li>
                                 </ul>
                             </div>
