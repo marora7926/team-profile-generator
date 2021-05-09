@@ -49,14 +49,13 @@ https://github.com/marora7926/team-profile-generator
 
 
 ## Screenshot - Generate HTML page
-
 ![HTML-page](./images/html-screenshot.png)
 
 ## Access a sample generated README file here
-[Sample generated HTML FIle](https://cloudstor.aarnet.edu.au/xx)
+[Sample generated HTML FIle](https://cloudstor.aarnet.edu.au/plus/s/PAOzWLkIpHzEjM8)
 
 ## Access Walkthrough Video here
-[Walkthrough Video](https://cloudstor.aarnet.edu.au/xx)
+[Team Profile Generator Walkthrough Video](https://cloudstor.aarnet.edu.au/xx)
 
 ---
 © 2021 Mohit Arora. All Rights Reserved.
