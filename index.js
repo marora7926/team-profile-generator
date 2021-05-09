@@ -51,26 +51,34 @@ function initApp() {
         });
     };
 
-    addManager();
-    function addOtherMembers() {}
-    function addEngineer() {}
-    function addIntern() {}
+    function addOtherMembers() {
+        inquirer.prompt([
+            {
+                type: "list",
+                name: "roleOptions",
+                message: "Which type of team member would you like to add?",
+                choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+            }
+        ]).then(selectedAnswer => {
+            switch (selectedAnswer.roleOptions) {
+                case "Engineer":
+                    engineerProfile();
+                    break;
+                case "Intern":
+                    internProfile();
+                    break;
+                default:
+                    generateHTML();
+            }
+        });
+    }
+
+
+
+    function engineerProfile() {}
+    function internProfile() {}
     function generateHTML() {}
+    managerProfile();
+}
 
-
-//   {
-//     type: 'checkbox',
-//     name: 'tech',
-//     message: 'What technologies were used for this project?',
-//     choices: ["HTML", "CSS", "Bootstrap", "JavaScript", "Node", "NPM"]
-// },
-// {
-//     type: 'input',
-//     name: 'gUsername',
-//     message: 'What is your github id?',
-// },
-// {
-//     type: 'input',
-//     name: 'email',
-//     message: 'What is your email id?',
-// },
+initApp();
