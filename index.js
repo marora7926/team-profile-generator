@@ -12,6 +12,7 @@ const teamRole = [];
 const memberName = [];
 const idNumber = [];
 const memberEmail = [];
+const otherData = [];
 
 function initApp() {
     // Prompt user to create a manager when application starts
@@ -46,6 +47,7 @@ function initApp() {
             memberName.push(data.managerName);
             idNumber.push(data.managerId);
             memberEmail.push = (data.managerEmail);
+            otherData.push = (data.officeNumber);
             console.log("Storing details of manager")
             addOtherMembers();
         });
@@ -73,11 +75,80 @@ function initApp() {
         });
     }
 
+    function engineerProfile() {
+        inquirer.prompt ([
+            {
+                type: 'input',
+                name: 'engineerName',
+                message: "What is the engineer's name?",
+            },
+            {
+                type: 'input',
+                name: 'engineerId',
+                message: "What is the engineer's Id?",
+            },
+            {
+                type: 'input',
+                name: 'engineerEmail',
+                message: "What is the engineer's email?",
+            },
+            {
+                type: 'input',
+                name: 'github',
+                message: "What is the engineer's github id?",
+            },
+        // this will return a promise
+        ]).then(data => {
+            const engineer = new Engineer(data.engineerName, data.engineerId, data.engineerEmail, data.github);
+            teamRole.push(engineer);
+            memberName.push(data.engineerName);
+            idNumber.push(data.engineerId);
+            memberEmail.push = (data.engineerEmail);
+            otherData.push = (data.github);
+            console.log("Storing details of engineer")
+            addOtherMembers();
+        });
+    };
+    
+    function internProfile() {
+        inquirer.prompt ([
+            {
+                type: 'input',
+                name: 'internName',
+                message: "What is the intern's name?",
+            },
+            {
+                type: 'input',
+                name: 'internId',
+                message: "What is the intern's Id?",
+            },
+            {
+                type: 'input',
+                name: 'internEmail',
+                message: "What is the intern's email?",
+            },
+            {
+                type: 'input',
+                name: 'school',
+                message: "What is the intern's school?",
+            },
+        // this will return a promise
+        ]).then(data => {
+            const intern = new Intern(data.internName, data.internId, data.internEmail, data.school);
+            teamRole.push(intern);
+            memberName.push(data.internName);
+            idNumber.push(data.internId);
+            memberEmail.push = (data.internEmail);
+            otherData.push = (data.school);
+            console.log("Storing details of intern")
+            addOtherMembers();
+        });
+    };
 
-
-    function engineerProfile() {}
-    function internProfile() {}
-    function generateHTML() {}
+    function generateHTML() {
+        
+    }
+    
     managerProfile();
 }
 
