@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif, monospace;
+}
+
 .jumbotron {
     background-color: #c21010;
 } 
@@ -6,6 +10,11 @@
     margin: 1em;
     max-width: 300px;
     width: 100%;
+}
+
+.main-section {
+    flex-wrap: wrap;
+    margin: 2em auto;
 }
 
 .card-body{
