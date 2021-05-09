@@ -146,7 +146,7 @@ function initApp() {
     };
     function generateHTML() {
         console.log("Generating HTML page for team profile")
-        fs.writeFileAsync('./dist/index.html', htmlTemplate(teamRole), "utf-8");
+        fs.writeFileSync('./dist/index.html', htmlTemplate(teamRole), "utf-8");
         console.log("Successfully generated index.html")
     };
 
