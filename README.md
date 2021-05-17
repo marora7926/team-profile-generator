@@ -55,7 +55,7 @@ https://github.com/marora7926/team-profile-generator
 [Sample generated HTML FIle](https://cloudstor.aarnet.edu.au/plus/s/PAOzWLkIpHzEjM8)
 
 ## Access Walkthrough Video here
-[Team Profile Generator Walkthrough Video](https://cloudstor.aarnet.edu.au/xx)
+[Team Profile Generator Walkthrough Video](https://cloudstor.aarnet.edu.au/plus/s/Kc02EkdKAJxQvH0)
 
 ---
 © 2021 Mohit Arora. All Rights Reserved.
