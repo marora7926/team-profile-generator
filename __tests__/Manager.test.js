@@ -20,7 +20,3 @@ describe("Initialization", () => {
         expect(employee.getRole()).toBe("Manager");
     });
 });
-
-
-// 
-// 
