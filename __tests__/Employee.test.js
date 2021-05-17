@@ -34,7 +34,7 @@ describe("Initialization", () => {
     // can get id via getId()
     it('Can get id via getId()', () => {
         const employee = new Employee ("David", 1, "d.impey@bcs.com.au");
-        expect(employee.getID()).toBe(1);
+        expect(employee.getId()).toBe(1);
     });
     
     // can get email via getEmail()
