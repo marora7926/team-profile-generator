@@ -51,7 +51,7 @@ https://github.com/marora7926/team-profile-generator
 ## Screenshot - Generate HTML page
 ![HTML-page](./images/html-screenshot.png)
 
-## Access a sample generated README file here
+## Access a sample generated HTML file here
 [Sample generated HTML FIle](https://cloudstor.aarnet.edu.au/plus/s/PAOzWLkIpHzEjM8)
 
 ## Access Walkthrough Video here
